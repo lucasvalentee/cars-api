@@ -1,0 +1,15 @@
+FROM node:14
+
+WORKDIR /usr/app
+
+COPY package.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 5433
+
+EXPOSE 3333
+
+CMD ["npm", "run", "dev"]
