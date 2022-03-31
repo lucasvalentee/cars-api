@@ -1,3 +1,4 @@
-import DatabaseConfiguration from './config';
+import DatabaseConfiguration from './config/DatabaseConfiguration';
+import DataSourceInstance from './config/DataSourceInstance';
 
-export { DatabaseConfiguration };
+export { DatabaseConfiguration, DataSourceInstance };
