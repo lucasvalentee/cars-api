@@ -10,4 +10,4 @@ Lucas Valente
 
 ## License
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/lucasvalentee/cars-api/blob/master/LICENSE.md)
+[![License](https://img.shields.io/badge/License-MIT-<COLOR>.svg)](https://github.com/lucasvalentee/cars-api/blob/master/LICENSE.md)
