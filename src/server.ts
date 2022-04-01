@@ -1,12 +1,15 @@
 import 'reflect-metadata';
+import 'express-async-errors';
+
 import express from 'express';
 import swaggerUi from 'swagger-ui-express';
 
 import './shared/container';
-import { DatabaseConfiguration } from './database';
 
 import router from './routes';
 import swaggerFile from './swagger.json';
+import { catchError } from './middlewares/catchError';
+import { DatabaseConfiguration } from './database';
 
 DatabaseConfiguration.startConnection();
 
@@ -17,5 +20,7 @@ app.use(express.json());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.use(router);
+
+app.use(catchError);
 
 app.listen(3333, () => console.log('Server is running on port 3333!'));
