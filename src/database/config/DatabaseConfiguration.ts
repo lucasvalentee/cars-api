@@ -56,9 +56,8 @@ class DatabaseConfiguration {
         '../migrations/*.ts',
       ],
       entities: [
-        `${__dirname}/src/modules/cars/entities/*.ts`,
         'src/modules/cars/entities/*.ts',
-        '../../modules/cars/entities/*.ts',
+        'src/modules/accounts/entities/*.ts',
       ],
     });
   }
