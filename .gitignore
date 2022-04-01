@@ -2,3 +2,5 @@ node_modules
 .vscode
 tmp/*
 !tmp/.gitkeep
+.env
+!.env.example
