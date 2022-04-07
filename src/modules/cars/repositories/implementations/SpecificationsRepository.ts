@@ -1,6 +1,7 @@
 import { Repository } from 'typeorm';
-import { DatabaseConfiguration } from '../../../../database';
-import Specification from '../../entities/Specification';
+
+import { DatabaseConfiguration } from '@database/index';
+import Specification from '@modules/cars/entities/Specification';
 import {
   ISpecificationDTO,
   ISpecificationsRepository,

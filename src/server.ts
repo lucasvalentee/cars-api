@@ -4,12 +4,12 @@ import 'express-async-errors';
 import express from 'express';
 import swaggerUi from 'swagger-ui-express';
 
-import './shared/container';
+import '@shared/container';
+import { DatabaseConfiguration } from '@database/index';
 
 import router from './routes';
 import swaggerFile from './swagger.json';
 import { catchError } from './middlewares/catchError';
-import { DatabaseConfiguration } from './database';
 
 DatabaseConfiguration.startConnection();
 

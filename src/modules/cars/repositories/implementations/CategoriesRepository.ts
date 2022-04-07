@@ -1,7 +1,7 @@
 import { Repository } from 'typeorm';
-import { DatabaseConfiguration } from '../../../../database';
-import Category from '../../entities/Category';
 
+import { DatabaseConfiguration } from '@database/index';
+import Category from '@modules/cars/entities/Category';
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
