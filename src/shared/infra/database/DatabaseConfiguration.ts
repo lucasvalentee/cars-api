@@ -51,13 +51,12 @@ class DatabaseConfiguration {
       password: DB_PASSWORD,
       database: DB_NAME,
       migrations: [
-        `${__dirname}/src/database/migrations/*.ts`,
-        'src/database/migrations/*.ts',
+        'src/shared/infra/typeorm/migrations/*.ts',
         '../migrations/*.ts',
       ],
       entities: [
-        'src/modules/cars/entities/*.ts',
-        'src/modules/accounts/entities/*.ts',
+        'src/modules/cars/infra/typeorm/entities/*.ts',
+        'src/modules/accounts/infra/typeorm/entities/*.ts',
       ],
     });
   }
